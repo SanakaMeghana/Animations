@@ -1,0 +1,55 @@
+.container
+{
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+   
+}
+
+.child
+{
+    background-color: bisque;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    text-align: center;
+    line-height: 50px;
+    animation-name: Jerry;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    animation-direction: alternate-reverse;
+    animation-timing-function: cubic-bezier(0.88, 1.05, 0.87, -0.12);
+    
+}
+
+@keyframes Jerry 
+{
+    0%
+    {
+        top:0;
+        left:0;
+    }
+    25%
+    {
+        top:0;
+        left:50px;
+
+    }
+    50%
+    {
+        top:50px;
+        left:50px;
+
+    }
+    75%
+    {
+        top:50px;
+        left:0;
+    }
+    100%
+    {
+        top:0;
+        left:0;
+    }
+    
+}
